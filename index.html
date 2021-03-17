@@ -4,51 +4,114 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="data:image/png;base64,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" type="image/gif" sizes="16x16">
         <title>Home Page</title>
     </head>
     <body>
         <section>
             <div class="container">
         
-                <h6 class="smalltitle1">Restaurant</h6>
+                <h6 class="smalltitle-a">Restaurant</h6>
                 <h1 class="maintitle" >Explore our menu
                     and eat what you want</h1>
              
-                <div class="wraper1">
-                    <div class="box1">
-                         <img class="image"  src="img/img1.svg" alt="photo">
-                        <h6 class="smalltitle">FOOD</h6>
-                        <h1 class="bigtitle"> fresh fish and onions </h1>
-                        <p class="paragraf">Fresh food directly from our restaurant ready coocked for you and you familly</p>
+                    <div class="wraper1">
+                        <div class="box1">
+                         <img class="image1"  src="img/img1.svg" alt="photo">
+                            <div class="text">
+                                 <h6 class="smalltitle1">FOOD</h6>
+                                <h1 class="bigtitle1"> fresh fish and onions </h1>
+                                <p class="paragraf1">Fresh food directly from our restaurant ready coocked for you and you familly</p>
+                            </div>
+                        </div>
+                         <div class="box2">
+                             <img class="image1" src="img/img2.svg" alt="photo2">
+                             <div class="text">  
+                                <h6 class="smalltitle1">desert</h6>
+                                 <h1 class="bigtitle1">chocolate cupcakes</h1>
+                                <p class="paragraf1">Fresh food directly from our restaurant ready coocked for you and you familly</p>
+                            </div>  
+                         </div>
+                        <div class="clear"></div>
                      </div>
-                     <div class="box2">
-                        <img class="image" src="img/img2.svg" alt="photo2">
-                        <h6 class="smalltitle">desert</h6>
-                        <h1 class="bigtitle">chocolate cupcakes</h1>
-                        <p class="paragraf">Fresh food directly from our restaurant ready coocked for you and you familly</p>
-                     </div>
-                </div>
 
-                <!-- <div class="wraper2">
-                    <div class="box3">
-                        <img class="image" src="img/img2.svg" alt="photo2">
-                        <h6>desert</h6>
-                        <h1>chocolate cupcakes</h1>
-                        <p>Fresh food directly from our restaurant ready coocked for you and you familly</p>
+             <div class="wraper2">
+                     <div class="box3">
+                         <img class="image1" src="img/img2.svg" alt="photo2">
+                         <div class="text">
+                             <h6 class="smalltitle1">desert</h6>
+                            <h1 class="bigtitle1">chocolate cupcakes</h1>
+                            <p class="paragraf1">Fresh food directly from our restaurant ready coocked for you and you familly
+                        </div>
                      </div>
                      <div class="box4">
-                        <img class="image"  src="img/img1.svg" alt="photo">
-                       <h6 class="small title">FOOD</h6>
-                       <h1 class="big title"> fresh fish and onions </h1>
-                       <p class="paragraf">Fresh food directly from our restaurant ready coocked for you and you familly</p>
+                        <img class="image1"  src="img/img1.svg" alt="photo">
+                        <div class="text">
+                            <h6 class="smalltitle1">FOOD</h6>
+                            <h1 class="bigtitle1"> fresh fish and onions </h1>
+                            <p class="paragraf1">Fresh food directly from our restaurant ready coocked for you and you familly</p>
+                        </div>
                     </div>
-
-                   
-                </div> -->
-
+                    <div class="clear"></div>
+              </div> 
                 
             </div>
+                
+            
 
+        </section>
+        <section >
+            <div class="container2">
+            
+                <h6 class="smalltitle-a2">blog</h6>
+                <h2 class="maintitle2">Read our newest blog
+                    post right away</h2>
+
+                <div class="wrapper2">
+                    <div class="box2a">
+                        <img class="image2a" src="img/photo1.svg" alt="blog photo 1">
+                        <h4 class="smalltitle2a">food and life</h4>
+                        <h2 class="bigtitle2">Succed in hotel business</h2>
+                        <p class="paragraf2">Fresh food directly from our restaurant ready coocked for you and you familly</p>
+                    </div>
+                    <div class="box2b">
+                        <img class="image2b" src="img/photo2.svg" alt="blog photo 2">
+                        <h4 class="smalltitle2">cooking</h4>
+                        <h2 class="bigtitle2">Cooking delicious food</h2>
+                        <p class="paragraf2">Fresh food directly from our restaurant ready coocked for you and you familly</p>
+                    </div>
+                    <div class="box2c">
+                        <img src="img/photo3.svg" alt="blog photo 3">
+                        <h4 class="smalltitle2">frutis</h4>
+                        <h2 class="bigtitle2">Getting fresh fruits</h2>
+                        <p class="paragraf2">Fresh food directly from our restaurant ready coocked for you and you familly</p>
+                    </div>
+                </div>
+
+                <div class="wraper2">
+                    <div class="box2c">
+                        <img src="img/photo3.svg" alt="blog photo 3">
+                        <h4 class="smalltitle2">frutis</h4>
+                        <h2 class="bigtitle2">Getting fresh fruits</h2>
+                        <p class="paragraf2">Fresh food directly from our restaurant ready coocked for you and you familly</p>
+                    </div>
+
+                    <div class="box2b">
+                        <img class="image2b" src="img/photo2.svg" alt="blog photo 2">
+                        <h4 class="smalltitle2">cooking</h4>
+                        <h2 class="bigtitle2">Cooking delicious food</h2>
+                        <p class="paragraf2">Fresh food directly from our restaurant ready coocked for you and you familly</p>
+                    </div>
+
+                    <div class="box2a">
+                        <img class="image2a" src="img/photo1.svg" alt="blog photo 1">
+                        <h4 class="smalltitle2">food and life</h4>
+                        <h2 class="bigtitle2">Succed in hotel business</h2>
+                        <p class="paragraf2">Fresh food directly from our restaurant ready coocked for you and you familly</p>
+                    </div>
+
+                 </div>
+            </div>
         </section>
     </body>
 </html>
